@@ -9,6 +9,10 @@ if (!arg) {
   return console.log('usage example: httpcodes 401')
 }
 
+if (arg === 'all') {
+  return console.log(JSON.stringify(STATUS_CODES, null, 2))
+}
+
 if (STATUS_CODES[arg]) {
   return console.log(arg, STATUS_CODES[arg])
 }
