@@ -4,9 +4,15 @@
 
 const { STATUS_CODES } = require('http')
 const arg = process.argv[2]
+const help = () => console.log(`
+  please provide a valid http status code, or all
+  usage example:
+  httpcodes 418
+  httpcodes all
+`)
 
 if (!arg) {
-  return console.log('usage example: httpcodes 401')
+  return help()
 }
 
 if (arg === 'all') {
@@ -14,7 +20,7 @@ if (arg === 'all') {
 }
 
 if (STATUS_CODES[arg]) {
-  return console.log(arg, STATUS_CODES[arg])
+  return console.log(`${arg}: ${STATUS_CODES[arg]}`)
 }
 
-console.log('please provide a valid code')
+return help()
