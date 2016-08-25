@@ -1,7 +1,7 @@
 {
   "name": "http-codes-cli",
   "description": "just get http status codes in the terminal",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": {
     "name": "Zac Anger",
     "email": "zac@zacanger.com",
@@ -10,7 +10,10 @@
   "license": "WTFPL",
   "main": "index.js",
   "preferGlobal": true,
-  "bin": "./index.js",
+  "bin": {
+    "http-codes-cli": "./index.js",
+    "httpcodes": "./index.js"
+  },
   "scripts": {
     "start": "node index"
   },
