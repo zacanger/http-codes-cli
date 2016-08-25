@@ -1,0 +1,33 @@
+{
+  "name": "http-codes-cli",
+  "description": "just get http status codes in the terminal",
+  "version": "0.0.1",
+  "author": {
+    "name": "Zac Anger",
+    "email": "zac@zacanger.com",
+    "url": "http://zacanger.com"
+  },
+  "license": "WTFPL",
+  "main": "index.js",
+  "preferGlobal": true,
+  "bin": "./index.js",
+  "scripts": {
+    "start": "node index"
+  },
+  "homepage": "https://github.com/zacanger/http-codes-cli#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zacanger/http-codes-cli.git"
+  },
+  "bugs": "https://github.com/zacanger/http-codes-cli/issues",
+  "keywords": [
+    "cli",
+    "codes",
+    "error",
+    "http",
+    "status",
+    "terminal"
+  ],
+  "dependencies": {},
+  "devDependencies": {}
+}
