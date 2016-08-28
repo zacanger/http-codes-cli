@@ -5,9 +5,10 @@ usage: `httpcodes 401`, or `httpcodes all`
 ```
 $ httpcodes
 
-  please provide a valid http status code, or all
+  please provide a valid http status code, or all, or full string
   usage example:
   httpcodes 418
   httpcodes all
+  httpcodes 'Moved Permanently'
 
 ```
