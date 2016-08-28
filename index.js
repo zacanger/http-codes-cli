@@ -4,11 +4,13 @@
 
 const { STATUS_CODES } = require('http')
 const arg = process.argv[2]
-const help = () => console.log(`
-  please provide a valid http status code, or all
+const log = console.log
+const help = () => log(`
+  please provide a valid http status code, or all, or full string
   usage example:
   httpcodes 418
   httpcodes all
+  httpcodes 'Moved Permanently'
 `)
 
 if (!arg) {
@@ -16,11 +18,18 @@ if (!arg) {
 }
 
 if (arg === 'all') {
-  return console.log(JSON.stringify(STATUS_CODES, null, 2))
+  return log(JSON.stringify(STATUS_CODES, null, 2))
 }
 
 if (STATUS_CODES[arg]) {
-  return console.log(`${arg}: ${STATUS_CODES[arg]}`)
+  return log(`${arg}: ${STATUS_CODES[arg]}`)
+}
+
+const getkeybyvalue = (object, value) =>
+  Object.keys(object).find(key => object[key] === value)
+
+if (getkeybyvalue(STATUS_CODES, arg)) {
+  return log (getkeybyvalue(STATUS_CODES, arg))
 }
 
 return help()
