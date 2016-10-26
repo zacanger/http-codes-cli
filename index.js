@@ -4,7 +4,7 @@
 
 const { STATUS_CODES } = require('http')
 const arg = process.argv[2]
-const log = console.log
+const { log } = console
 const help = () => log(`
   please provide a valid http status code, or all, or full string
   usage example:
