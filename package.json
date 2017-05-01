@@ -1,7 +1,7 @@
 {
   "name": "http-codes-cli",
   "description": "just get http status codes in the terminal",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": {
     "name": "Zac Anger",
     "email": "zac@zacanger.com",
@@ -34,6 +34,6 @@
   "dependencies": {},
   "devDependencies": {},
   "engines": {
-    "node": ">=6.0.0"
+    "node": ">=6.4.0"
   }
 }

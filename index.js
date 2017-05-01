@@ -26,7 +26,7 @@ if (STATUS_CODES[arg]) {
 }
 
 const getkeybyvalue = (object, value) =>
-  Object.keys(object).find(key => object[key] === value)
+  Object.keys(object).find((key) => object[key].toLowerCase() === value.toLowerCase())
 
 if (getkeybyvalue(STATUS_CODES, arg)) {
   return log (getkeybyvalue(STATUS_CODES, arg))
