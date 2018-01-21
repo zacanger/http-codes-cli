@@ -1,7 +1,7 @@
 {
   "name": "http-codes-cli",
   "description": "just get http status codes in the terminal",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "author": {
     "name": "Zac Anger",
     "email": "zac@zacanger.com",
